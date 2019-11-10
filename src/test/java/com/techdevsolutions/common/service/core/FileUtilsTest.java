@@ -1,6 +1,7 @@
 package com.techdevsolutions.common.service.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,6 +13,7 @@ public class FileUtilsTest {
         System.out.println(FileUtils.ListDirectories("/"));
     }
 
+    @Ignore
     @Test
     public void traverseStart() throws JsonProcessingException {
         Timer timer = new Timer().start();
