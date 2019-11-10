@@ -1,6 +1,5 @@
 package com.techdevsolutions.common.service.core;
 
-import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.xml.bind.DatatypeConverter;
@@ -10,36 +9,48 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HashUtils {
-    public static String md5(String stringToHash) {
-        if (StringUtils.isEmpty(stringToHash)) {
-            throw new IllegalArgumentException("String is null or empty");
-        }
 
-        MessageDigest md = null;
-        try {
-            md = MessageDigest.getInstance(MessageDigestAlgorithms.MD5);
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        md.update(stringToHash.getBytes());
-        byte[] digest = md.digest();
-        return DatatypeConverter.printHexBinary(digest).toUpperCase();
-    }
-
-    public static String md5(File file) throws IOException {
+    public static String md5(File file) throws IOException, NoSuchAlgorithmException {
         if (!file.exists()) {
             throw new IOException("File does not exist: " + file.getAbsolutePath());
         }
 
         byte[] bytes = new byte[(int) file.length()];
-        MessageDigest md = null;
-        try {
-            md = MessageDigest.getInstance(MessageDigestAlgorithms.MD5);
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
+
+        return md5(bytes);
+    }
+
+    public static String md5(byte[] bytes) throws IllegalArgumentException, NoSuchAlgorithmException {
+        return HashUtils.hash("MD5", bytes);
+    }
+
+    public static String sha1(byte[] bytes) throws IllegalArgumentException, NoSuchAlgorithmException {
+        return HashUtils.hash("SHA-1", bytes);
+    }
+
+    public static String sha256(byte[] bytes) throws IllegalArgumentException, NoSuchAlgorithmException {
+        return HashUtils.hash("SHA-256", bytes);
+    }
+
+    public static String sha512(byte[] bytes) throws IllegalArgumentException, NoSuchAlgorithmException {
+        return HashUtils.hash("SHA-512", bytes);
+    }
+
+    public static String hash(String type, byte[] bytes) throws IllegalArgumentException, NoSuchAlgorithmException {
+        if (StringUtils.isEmpty(type)) {
+            throw new IllegalArgumentException("type is null or empty");
         }
+
+        MessageDigest md = MessageDigest.getInstance(type);
         md.update(bytes);
-        byte[] digest = md.digest();
-        return DatatypeConverter.printHexBinary(digest).toUpperCase();
+        return HashUtils.bytesToHexString(md.digest());
+    }
+
+    public static String bytesToHexString(byte[] bytes) {
+        if (bytes == null) {
+            throw new IllegalArgumentException("bytes is null");
+        }
+
+        return DatatypeConverter.printHexBinary(bytes).toUpperCase();
     }
 }

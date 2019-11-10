@@ -1,0 +1,1 @@
+https://github.com/elastic/ecs/blob/master/generated/csv/fields.csv

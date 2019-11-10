@@ -44,7 +44,7 @@ public class FileUtils {
 
                         Map<String, Object> fileMap = new HashMap<>();
                         fileMap.put("name", path);
-                        fileMap.put("sha1", SHA1Utils.sha1(Files.readAllBytes(i.toPath())));
+                        fileMap.put("sha1", HashUtils.sha1(Files.readAllBytes(i.toPath())));
                         fileMap.put("size", i.length());
                         fileMap.put("modified", DateUtils.DateToISO(i.lastModified()));
                         fileMap.put("hidden", i.isHidden());
