@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SystemUtils {
-    public static Map<String, Object> GetAllSystemProperties() {
+    public static Map<String, Object> GetAllSystemProperties(boolean externalIpAddress) {
         Properties properties = System.getProperties();
         Map<String, Object> map = new ObjectMapper().convertValue(properties, Map.class);
         map.put("datetime", DateUtils.DateToISO(new Date()));
@@ -30,18 +30,20 @@ public class SystemUtils {
 
         try {
             Map<String, Object> network = NetworkUtils.GetAllSystemNetworkProperties();
-            map.put("network.external.ipAddress", network.get("network.external.ipAddress"));
             map.put("network.local.hostname", network.get("network.local.hostname"));
             map.put("network.networks", network.get("network.networks"));
 
-            try {
-                String externalIpAddress = (String) map.get("network.external.ipAddress");
+            if (externalIpAddress) {
+                String extIpAddress = (String) network.get("network.external.ipAddress");
+                map.put("network.external.ipAddress", extIpAddress);
 
-                if (StringUtils.isNotEmpty(externalIpAddress)) {
-                    map.put("geoip", NetworkUtils.GeoIpLookup(externalIpAddress));
+                try {
+                    if (StringUtils.isNotEmpty(extIpAddress)) {
+                        map.put("geoip", NetworkUtils.GeoIpLookup(extIpAddress));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,14 +52,14 @@ public class SystemUtils {
         return map;
     }
 
-    public static Map<String, Object> GetAllSystemPropertiesOrganized() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+    public static Map<String, Object> GetAllSystemPropertiesOrganized(boolean externalIpAddress) {
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(externalIpAddress);
         Map<String, Object> organized = new HashMap<>();
         organized.put("datetime", map.get("datetime"));
-        organized.put("os", SystemUtils.GetOperatingSystemProperties());
-        organized.put("network", SystemUtils.GetNetworkSystemProperties());
-        organized.put("java", SystemUtils.GetJavaSystemProperties());
-        organized.put("user", SystemUtils.GetUserSystemProperties());
+        organized.put("os", SystemUtils.GetOperatingSystemProperties(map));
+        organized.put("network", SystemUtils.GetNetworkSystemProperties(map));
+        organized.put("java", SystemUtils.GetJavaSystemProperties(map));
+        organized.put("user", SystemUtils.GetUserSystemProperties(map));
         organized.put("sun", map.entrySet().stream().filter((i)->i.getKey().contains("sun."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)));
         organized.put("system", map.entrySet().stream()
@@ -68,35 +70,55 @@ public class SystemUtils {
     }
 
     public static Map<String, Object> GetGeoIpProperties() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(true);
+        return SystemUtils.GetGeoIpProperties(map);
+    }
+
+    public static Map<String, Object> GetGeoIpProperties(Map<String, Object> map) {
         return map.entrySet().stream()
                 .filter((i)->i.getKey().startsWith("user."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public static Map<String, Object> GetUserSystemProperties() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(false);
+        return SystemUtils.GetUserSystemProperties(map);
+    }
+
+    public static Map<String, Object> GetUserSystemProperties(Map<String, Object> map) {
         return map.entrySet().stream()
                 .filter((i)->i.getKey().startsWith("user."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public static Map<String, Object> GetJavaSystemProperties() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(false);
+        return SystemUtils.GetJavaSystemProperties(map);
+    }
+
+    public static Map<String, Object> GetJavaSystemProperties(Map<String, Object> map) {
         return map.entrySet().stream()
                 .filter((i)->i.getKey().startsWith("java."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public static Map<String, Object> GetOperatingSystemProperties() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(false);
+        return SystemUtils.GetOperatingSystemProperties(map);
+    }
+
+    public static Map<String, Object> GetOperatingSystemProperties(Map<String, Object> map) {
         return map.entrySet().stream()
                 .filter((i)->i.getKey().startsWith("os."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
-    public static Map<String, Object> GetNetworkSystemProperties() {
-        Map<String, Object> map = SystemUtils.GetAllSystemProperties();
+    public static Map<String, Object> GetNetworkSystemProperties(boolean externalIpAddress) {
+        Map<String, Object> map = SystemUtils.GetAllSystemProperties(externalIpAddress);
+        return SystemUtils.GetNetworkSystemProperties(map);
+    }
+
+    public static Map<String, Object> GetNetworkSystemProperties(Map<String, Object> map) {
         return map.entrySet().stream()
                 .filter((i)->i.getKey().startsWith("network."))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));

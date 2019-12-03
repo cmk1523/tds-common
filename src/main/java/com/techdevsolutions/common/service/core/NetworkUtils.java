@@ -37,7 +37,7 @@ public class NetworkUtils {
                 while (addressEnumeration.hasMoreElements()) {
                     InetAddress inetAddress1 = addressEnumeration.nextElement();
                     Map<String, Object> address = new HashMap<>();
-                    address.put("hostname", inetAddress1.getHostName());
+//                    address.put("hostname", inetAddress1.getHostName());
                     address.put("address", inetAddress1.getHostAddress());
                     interfaces.add(address);
                 }
