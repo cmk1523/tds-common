@@ -1,41 +1,30 @@
 package com.techdevsolutions.common.beans.auditable;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Auditable implements Serializable {
-    private String id = "";
-    private String name = "";
-    private String createdBy = "";
-    private String updatedBy = "";
-    private Date createdDate = new Date();
-    private Date updatedDate = new Date();
-    private Boolean removed = false;
+public class Auditable implements Serializable, Comparable<Auditable> {
+    @NotBlank
+    private String id;
 
-    public Auditable() {
-    }
+    @NotBlank
+    private String name;
 
-    public Auditable(String id, String name, String createdBy, String updatedBy, Date createdDate, Date updatedDate,
-                     Boolean removed) {
-        this.id = id;
-        this.name = name;
-        this.createdBy = createdBy;
-        this.updatedBy = updatedBy;
-        this.createdDate = createdDate;
-        this.updatedDate = updatedDate;
-        this.removed = removed;
-    }
+    @NotNull
+    private Date created;
+
+    @NotNull
+    private Boolean removed;
 
     @Override
     public String toString() {
         return "Auditable{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", createdBy='" + createdBy + '\'' +
-                ", updatedBy='" + updatedBy + '\'' +
-                ", createdDate=" + createdDate +
-                ", updatedDate=" + updatedDate +
+                ", created=" + created +
                 ", removed=" + removed +
                 '}';
     }
@@ -47,17 +36,19 @@ public class Auditable implements Serializable {
         Auditable auditable = (Auditable) o;
         return Objects.equals(id, auditable.id) &&
                 Objects.equals(name, auditable.name) &&
-                Objects.equals(createdBy, auditable.createdBy) &&
-                Objects.equals(updatedBy, auditable.updatedBy) &&
-                Objects.equals(createdDate, auditable.createdDate) &&
-                Objects.equals(updatedDate, auditable.updatedDate) &&
+                Objects.equals(created, auditable.created) &&
                 Objects.equals(removed, auditable.removed);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, createdBy, updatedBy, createdDate, updatedDate, removed);
+        return Objects.hash(id, name, created, removed);
+    }
+
+    @Override
+    public int compareTo(Auditable o) {
+        return this.getId().compareTo(o.getId());
     }
 
     public String getId() {
@@ -78,39 +69,12 @@ public class Auditable implements Serializable {
         return this;
     }
 
-    public String getCreatedBy() {
-        return createdBy;
+    public Date getCreated() {
+        return created;
     }
 
-    public Auditable setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-        return this;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public Auditable setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-        return this;
-    }
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public Auditable setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-        return this;
-    }
-
-    public Date getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public Auditable setUpdatedDate(Date updatedDate) {
-        this.updatedDate = updatedDate;
+    public Auditable setCreated(Date created) {
+        this.created = created;
         return this;
     }
 
