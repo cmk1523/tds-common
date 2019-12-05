@@ -14,10 +14,7 @@ public class Auditable implements Serializable, Comparable<Auditable> {
     private String name;
 
     @NotNull
-    private Date created;
-
-    @NotNull
-    private Boolean removed;
+    private Long created;
 
     @Override
     public String toString() {
@@ -25,7 +22,6 @@ public class Auditable implements Serializable, Comparable<Auditable> {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", created=" + created +
-                ", removed=" + removed +
                 '}';
     }
 
@@ -36,14 +32,13 @@ public class Auditable implements Serializable, Comparable<Auditable> {
         Auditable auditable = (Auditable) o;
         return Objects.equals(id, auditable.id) &&
                 Objects.equals(name, auditable.name) &&
-                Objects.equals(created, auditable.created) &&
-                Objects.equals(removed, auditable.removed);
+                Objects.equals(created, auditable.created);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, created, removed);
+        return Objects.hash(id, name, created);
     }
 
     @Override
@@ -69,21 +64,12 @@ public class Auditable implements Serializable, Comparable<Auditable> {
         return this;
     }
 
-    public Date getCreated() {
+    public Long getCreated() {
         return created;
     }
 
-    public Auditable setCreated(Date created) {
+    public Auditable setCreated(Long created) {
         this.created = created;
-        return this;
-    }
-
-    public Boolean getRemoved() {
-        return removed;
-    }
-
-    public Auditable setRemoved(Boolean removed) {
-        this.removed = removed;
         return this;
     }
 }

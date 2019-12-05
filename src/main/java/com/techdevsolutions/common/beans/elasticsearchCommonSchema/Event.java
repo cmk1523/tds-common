@@ -1,16 +1,19 @@
 package com.techdevsolutions.common.beans.elasticsearchCommonSchema;
 
-import java.util.Date;
-import java.util.Objects;
+import com.techdevsolutions.common.service.core.DateUtils;
 
-public class Event extends Base {
+import java.util.*;
+
+public class Event<T> {
+    private String timezone = DateUtils.TIMEZONE_GMT;
+    private Long duration;
+    private Date start;
+    private Date end;
+    private Date created;
     private String action;
     private String category;
     private String code;
-    private Date created;
     private String dataset;
-    private Long duration;
-    private Date end;
     private String hash;
     private String id;
     private String kind;
@@ -22,19 +25,52 @@ public class Event extends Base {
     private Double risrScoreNormalized;
     private Long sequence;
     private Long severity;
-    private String timezone;
     private String type;
+    private T data;
+
+    public Map<String, Object> toElasticsearchMap(Event item) {
+        return Event.ToElasticsearchMap(item);
+    }
+
+    public static Map<String, Object> ToElasticsearchMap(Event item) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("event.action", item.getAction());
+        map.put("event.category", item.getCategory());
+        map.put("event.code", item.getCode());
+        map.put("event.created", item.getCreated() != null ? DateUtils.DateToISO(item.getCreated()) : null);
+        map.put("event.dataset", item.getDataset());
+        map.put("event.duration", item.getDuration());
+        map.put("event.start", item.getStart() != null ? DateUtils.DateToISO(item.getStart()) : null);
+        map.put("event.end", item.getStart() != null ? DateUtils.DateToISO(item.getEnd()) : null);
+        map.put("event.hash", item.getHash());
+        map.put("event.id", item.getId());
+        map.put("event.kind", item.getKind());
+        map.put("event.module", item.getModule());
+        map.put("event.original", item.getOriginal());
+        map.put("event.outcome", item.getOutcome());
+        map.put("event.provider", item.getProvider());
+        map.put("event.risk_score", item.getRiskScore());
+        map.put("event.risk_score_norm", item.getRisrScoreNormalized());
+        map.put("event.sequence", item.getSequence());
+        map.put("event.severity", item.getSeverity());
+        map.put("event.timezone", item.getTimezone());
+        map.put("event.type", item.getType());
+        map.put("event.data", item.getData());
+        return map;
+    }
 
     @Override
     public String toString() {
         return "Event{" +
-                "action='" + action + '\'' +
+                "timezone='" + timezone + '\'' +
+                ", duration=" + duration +
+                ", start=" + start +
+                ", end=" + end +
+                ", action='" + action + '\'' +
                 ", category='" + category + '\'' +
                 ", code='" + code + '\'' +
                 ", created=" + created +
                 ", dataset='" + dataset + '\'' +
-                ", duration=" + duration +
-                ", end=" + end +
                 ", hash='" + hash + '\'' +
                 ", id='" + id + '\'' +
                 ", kind='" + kind + '\'' +
@@ -46,23 +82,29 @@ public class Event extends Base {
                 ", risrScoreNormalized=" + risrScoreNormalized +
                 ", sequence=" + sequence +
                 ", severity=" + severity +
-                ", timezone='" + timezone + '\'' +
                 ", type='" + type + '\'' +
+                ", data=" + data +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Event)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Event event = (Event) o;
-        return Objects.equals(action, event.action) &&
+        return duration == event.duration &&
+                Double.compare(event.riskScore, riskScore) == 0 &&
+                Double.compare(event.risrScoreNormalized, risrScoreNormalized) == 0 &&
+                sequence == event.sequence &&
+                severity == event.severity &&
+                Objects.equals(timezone, event.timezone) &&
+                Objects.equals(start, event.start) &&
+                Objects.equals(end, event.end) &&
+                Objects.equals(action, event.action) &&
                 Objects.equals(category, event.category) &&
                 Objects.equals(code, event.code) &&
                 Objects.equals(created, event.created) &&
                 Objects.equals(dataset, event.dataset) &&
-                Objects.equals(duration, event.duration) &&
-                Objects.equals(end, event.end) &&
                 Objects.equals(hash, event.hash) &&
                 Objects.equals(id, event.id) &&
                 Objects.equals(kind, event.kind) &&
@@ -70,18 +112,32 @@ public class Event extends Base {
                 Objects.equals(original, event.original) &&
                 Objects.equals(outcome, event.outcome) &&
                 Objects.equals(provider, event.provider) &&
-                Objects.equals(riskScore, event.riskScore) &&
-                Objects.equals(risrScoreNormalized, event.risrScoreNormalized) &&
-                Objects.equals(sequence, event.sequence) &&
-                Objects.equals(severity, event.severity) &&
-                Objects.equals(timezone, event.timezone) &&
-                Objects.equals(type, event.type);
+                Objects.equals(type, event.type) &&
+                Objects.equals(data, event.data);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(action, category, code, created, dataset, duration, end, hash, id, kind, module, original, outcome, provider, riskScore, risrScoreNormalized, sequence, severity, timezone, type);
+        return Objects.hash(timezone, duration, start, end, action, category, code, created, dataset, hash, id, kind, module, original, outcome, provider, riskScore, risrScoreNormalized, sequence, severity, type, data);
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public Event setData(T data) {
+        this.data = data;
+        return this;
+    }
+
+    public Date getStart() {
+        return start;
+    }
+
+    public Event setStart(Date start) {
+        this.start = start;
+        return this;
     }
 
     public String getAction() {
