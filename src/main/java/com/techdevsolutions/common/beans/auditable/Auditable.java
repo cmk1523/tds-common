@@ -14,7 +14,6 @@ public class Auditable implements Serializable, Comparable<Auditable> {
     @NotBlank
     private String id;
 
-    @NotBlank
     private String name;
 
     @NotNull

@@ -2,6 +2,7 @@ package com.techdevsolutions.common.dao.elasticsearch.events;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.techdevsolutions.common.beans.elasticsearchCommonSchema.Event;
 import com.techdevsolutions.common.service.core.DateUtils;
 
@@ -13,6 +14,10 @@ import java.util.TimeZone;
 
 public class EventRowMapper {
     private ObjectMapper objectMapper = new ObjectMapper();
+
+    public EventRowMapper() {
+        this.objectMapper.registerModule(new Jdk8Module());
+    }
 
     public Event fromJson(String json) throws IOException, ParseException {
         return this.fromJson(json, "");

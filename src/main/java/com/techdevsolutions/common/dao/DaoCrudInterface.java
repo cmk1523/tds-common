@@ -16,4 +16,6 @@ public interface DaoCrudInterface<T> {
     T update(T item) throws Exception;
 
     Boolean verifyRemoval(final String id) throws Exception;
+
+    void setupIndex() throws Exception;
 }

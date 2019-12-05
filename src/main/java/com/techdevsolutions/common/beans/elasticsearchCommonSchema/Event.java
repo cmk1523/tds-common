@@ -1,6 +1,10 @@
 package com.techdevsolutions.common.beans.elasticsearchCommonSchema;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.techdevsolutions.common.service.core.DateUtils;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.PredicateUtils;
 
 import java.util.*;
 
@@ -55,7 +59,15 @@ public class Event<T> {
         map.put("event.severity", item.getSeverity());
         map.put("event.timezone", item.getTimezone());
         map.put("event.type", item.getType());
-        map.put("event.data", item.getData());
+
+        if (item.getData() != null) {
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.registerModule(new Jdk8Module());
+            Map<String, Object> dataAsMap = objectMapper.convertValue(item.getData(), Map.class);
+            CollectionUtils.filter(dataAsMap.values(), PredicateUtils.notNullPredicate());
+            map.put("event.data", item.getData());
+        }
+
         return map;
     }
 

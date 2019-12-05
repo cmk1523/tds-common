@@ -2,6 +2,7 @@ package com.techdevsolutions.common.dao.elasticsearch.events;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.techdevsolutions.common.beans.elasticsearchCommonSchema.Event;
 import com.techdevsolutions.common.dao.elasticsearch.BaseElasticsearchHighLevel;
 import org.apache.commons.collections4.CollectionUtils;
@@ -64,15 +65,9 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
 
     public static String EventToJson(final Event event) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Map<String, Object> itemAsMap = Event.ToElasticsearchMap(event);
+        objectMapper.registerModule(new Jdk8Module());
+        Map<String, Object> itemAsMap = event.toElasticsearchMap(event);
         CollectionUtils.filter(itemAsMap.values(), PredicateUtils.notNullPredicate());
-        Map<String, Object> dataAsMap = objectMapper.convertValue(event.getData(), Map.class);
-
-        if (dataAsMap != null) {
-            CollectionUtils.filter(dataAsMap.values(), PredicateUtils.notNullPredicate());
-            itemAsMap.put("event.data", dataAsMap);
-        }
-
         return objectMapper.writeValueAsString(itemAsMap);
     }
 

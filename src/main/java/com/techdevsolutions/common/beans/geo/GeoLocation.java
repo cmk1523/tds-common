@@ -15,6 +15,14 @@ public class GeoLocation implements Serializable, Comparable<GeoLocation> {
         this.longitude = longitude;
     }
 
+    public static GeoLocation fromLatLonString(String i) {
+        GeoLocation geoLocation = new GeoLocation();
+        String[] split = i.split(",");
+        geoLocation.setLatitude(Double.valueOf(split[0]));
+        geoLocation.setLongitude(Double.valueOf(split[1]));
+        return geoLocation;
+    }
+
     @Override
     public String toString() {
         return "GeoLocation{" +
