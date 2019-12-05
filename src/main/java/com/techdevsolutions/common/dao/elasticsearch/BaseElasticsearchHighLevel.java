@@ -29,6 +29,11 @@ import org.elasticsearch.common.unit.ByteSizeUnit;
 import org.elasticsearch.common.unit.ByteSizeValue;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.reindex.BulkByScrollResponse;
+import org.elasticsearch.index.reindex.DeleteByQueryAction;
+import org.elasticsearch.index.reindex.DeleteByQueryRequest;
+import org.elasticsearch.index.reindex.DeleteByQueryRequestBuilder;
 import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -167,6 +172,10 @@ public class BaseElasticsearchHighLevel {
     public void deleteIndex(RestHighLevelClient client, String index) throws IOException {
         DeleteIndexRequest request = new DeleteIndexRequest(index);
         this.getClient().indices().delete(request, RequestOptions.DEFAULT);
+    }
+
+    public void deleteByQuery(DeleteByQueryRequest request) throws IOException {
+        this.getClient().deleteByQuery(request, RequestOptions.DEFAULT);
     }
 
 

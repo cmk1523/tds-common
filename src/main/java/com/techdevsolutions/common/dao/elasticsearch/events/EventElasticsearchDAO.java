@@ -279,8 +279,11 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
 
     public Event getEventByEventDataIdLazy(final String id, final String category, final String dataset) throws Exception {
         int currentRetry = 0;
+        int maxRetries = 12;
+        int indexTime = 3000 * 2;
+        int checkTime = indexTime / maxRetries;
 
-        while(currentRetry < 10 * 2) {
+        while(currentRetry < maxRetries) {
             try {
                 Event event = this.getEventByEventDataId(id, category, dataset);
 //                this.logger.info("Took " + currentRetry + " retries");
@@ -291,10 +294,58 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
                 }
 
                 currentRetry++;
-                Thread.sleep(50L);
+                Thread.sleep(checkTime);
             }
         }
 
         throw new Exception("Unable to find item by id: " + id);
+    }
+
+    public Boolean verifyRemoval(final String id, final String category, final String dataset) throws Exception {
+        int currentRetry = 0;
+        int maxRetries = 12;
+        int indexTime = 3000 * 2;
+        int checkTime = indexTime / maxRetries;
+
+        while(currentRetry < maxRetries) {
+            try {
+                Event event = this.getEventByEventDataId(id, category, dataset);
+
+                if (!event.getAction().equals(EventElasticsearchDAO.ACTION_REMOVED)) {
+                    currentRetry++;
+                    Thread.sleep(checkTime);
+                } else {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw e;
+            }
+        }
+
+        throw new Exception("Unable to verify removal of item by id: " + id);
+    }
+
+    public Boolean verifyUpdate(final String id, final String category, final String dataset) throws Exception {
+        int currentRetry = 0;
+        int maxRetries = 12;
+        int indexTime = 3000 * 2;
+        int checkTime = indexTime / maxRetries;
+
+        while(currentRetry < maxRetries) {
+            try {
+                Event event = this.getEventByEventDataId(id, category, dataset);
+
+                if (!event.getAction().equals(EventElasticsearchDAO.ACTION_UPDATED)) {
+                    currentRetry++;
+                    Thread.sleep(checkTime);
+                } else {
+                    return true;
+                }
+            } catch (Exception e) {
+                throw e;
+            }
+        }
+
+        throw new Exception("Unable to verify update of item by id: " + id);
     }
 }
