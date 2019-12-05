@@ -1,5 +1,6 @@
 package com.techdevsolutions.common.service.core;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -13,6 +14,8 @@ public class NetworkUtilsTests {
     @Test
     public void test() throws IOException, GeoIp2Exception {
         Map<String, Object> map = NetworkUtils.GeoIpLookup(NetworkUtils.getExternalIpAddress());
+        String json = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(map);
+        System.out.println(json);
         Assert.assertTrue(map != null);
     }
 }
