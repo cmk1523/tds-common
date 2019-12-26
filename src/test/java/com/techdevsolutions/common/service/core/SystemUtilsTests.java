@@ -14,7 +14,7 @@ public class SystemUtilsTests {
     public void test() throws JsonProcessingException {
         Map<String, Object> map = SystemUtils.GetAllSystemPropertiesOrganized(true);
         String json = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(map);
-        System.out.println(json);
+//        System.out.println(json);
         Assert.assertTrue(true);
     }
 }

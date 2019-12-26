@@ -15,7 +15,7 @@ public class NetworkUtilsTests {
     public void test() throws IOException, GeoIp2Exception {
         Map<String, Object> map = NetworkUtils.GeoIpLookup(NetworkUtils.getExternalIpAddress());
         String json = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(map);
-        System.out.println(json);
+//        System.out.println(json);
         Assert.assertTrue(map != null);
     }
 }
