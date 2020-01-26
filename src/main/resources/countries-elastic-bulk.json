@@ -1,0 +1,488 @@
+{ "index" : { "_index" : "countries", "_id" : "8F204E1C1D83FEA586AF634D98EE9C86" } }
+{"name":"Gustavia","code":"BL"}
+{ "index" : { "_index" : "countries", "_id" : "4152511057D927DBAA0403EE251D7B1F" } }
+{"name":"Afghanistan","code":"AF"}
+{ "index" : { "_index" : "countries", "_id" : "F16B903950F006920252AE036595034A" } }
+{"name":"Åland Islands","code":"AX"}
+{ "index" : { "_index" : "countries", "_id" : "78AB3B46309CAAD374CB2E2C2AC800E9" } }
+{"name":"Albania","code":"AL"}
+{ "index" : { "_index" : "countries", "_id" : "F8252C1F2516BD34E2E30C9F722F9B48" } }
+{"name":"Algeria","code":"DZ"}
+{ "index" : { "_index" : "countries", "_id" : "DCC36F493A5D7A511AE91C69C44213AF" } }
+{"name":"American Samoa","code":"AS"}
+{ "index" : { "_index" : "countries", "_id" : "9BF5AA1F725334BC968AB78C91BF06E9" } }
+{"name":"AndorrA","code":"AD"}
+{ "index" : { "_index" : "countries", "_id" : "3C0C7FF40C611C79C5C575345B549BD2" } }
+{"name":"Angola","code":"AO"}
+{ "index" : { "_index" : "countries", "_id" : "F6699A8A9C966C9E411DB372CDAE89D3" } }
+{"name":"Anguilla","code":"AI"}
+{ "index" : { "_index" : "countries", "_id" : "3C99E2B3D33880426D64931BF46B9BC7" } }
+{"name":"Antarctica","code":"AQ"}
+{ "index" : { "_index" : "countries", "_id" : "CCF1EFA5E184A7C51CCED46246A8FB82" } }
+{"name":"Antigua and Barbuda","code":"AG"}
+{ "index" : { "_index" : "countries", "_id" : "C477EFFF703F942DEFD3AA5DC50B48D0" } }
+{"name":"Argentina","code":"AR"}
+{ "index" : { "_index" : "countries", "_id" : "638D4D116E2033FB81461C4CB9E52E19" } }
+{"name":"Armenia","code":"AM"}
+{ "index" : { "_index" : "countries", "_id" : "55324E5BB5DC12138BFE6F2236F29C3D" } }
+{"name":"Aruba","code":"AW"}
+{ "index" : { "_index" : "countries", "_id" : "56A46D385EA63E51D99118D400CD4295" } }
+{"name":"Australia","code":"AU"}
+{ "index" : { "_index" : "countries", "_id" : "8E80A506ACCC6DDCBA37B7071D78DFC0" } }
+{"name":"Austria","code":"AT"}
+{ "index" : { "_index" : "countries", "_id" : "36E8B6871E9485DF7C0BB100ACB37066" } }
+{"name":"Azerbaijan","code":"AZ"}
+{ "index" : { "_index" : "countries", "_id" : "491487AE71F03671E0EF3075A5F832D2" } }
+{"name":"Bahamas","code":"BS"}
+{ "index" : { "_index" : "countries", "_id" : "11F303D7C02BCA2D259F95EBF10B001E" } }
+{"name":"Bahrain","code":"BH"}
+{ "index" : { "_index" : "countries", "_id" : "CCF06A62511ED96CD30C68E3D2472F5D" } }
+{"name":"Bangladesh","code":"BD"}
+{ "index" : { "_index" : "countries", "_id" : "B5B4E8977B4AAB8BCBA060DB14DD7AE8" } }
+{"name":"Barbados","code":"BB"}
+{ "index" : { "_index" : "countries", "_id" : "307B5D08436BE207681CB8785B9EE0CB" } }
+{"name":"Belarus","code":"BY"}
+{ "index" : { "_index" : "countries", "_id" : "A4756979028091B40DC5FCD5FA34584C" } }
+{"name":"Belgium","code":"BE"}
+{ "index" : { "_index" : "countries", "_id" : "7EB7799BCFA6B26E9658A5F363844F3B" } }
+{"name":"Belize","code":"BZ"}
+{ "index" : { "_index" : "countries", "_id" : "1DA5617A38F46386AFCBC52ACBC50AFF" } }
+{"name":"Benin","code":"BJ"}
+{ "index" : { "_index" : "countries", "_id" : "DCB0FC7D1A656B2F8D3DA3CCB4E16934" } }
+{"name":"Bermuda","code":"BM"}
+{ "index" : { "_index" : "countries", "_id" : "B8EA4798B398C466D98C6CFB3AB085A7" } }
+{"name":"Bhutan","code":"BT"}
+{ "index" : { "_index" : "countries", "_id" : "3A29039134F142EB04A3C5980B7AC1A0" } }
+{"name":"Bolivia","code":"BO"}
+{ "index" : { "_index" : "countries", "_id" : "8931094AB6900B92B8BA31A83B6B269B" } }
+{"name":"Bosnia and Herzegovina","code":"BA"}
+{ "index" : { "_index" : "countries", "_id" : "EF57577E24E7056FB518C4702FA56028" } }
+{"name":"Botswana","code":"BW"}
+{ "index" : { "_index" : "countries", "_id" : "A627586E198C49D0A03A6A5149215358" } }
+{"name":"Bouvet Island","code":"BV"}
+{ "index" : { "_index" : "countries", "_id" : "14834D4287E6CE2672FED9090CA890C0" } }
+{"name":"Brazil","code":"BR"}
+{ "index" : { "_index" : "countries", "_id" : "5917DFC16F6AFEBA4F5188853DB5E899" } }
+{"name":"British Indian Ocean Territory","code":"IO"}
+{ "index" : { "_index" : "countries", "_id" : "27503BB00860B58C523CDC2730F98F26" } }
+{"name":"Brunei Darussalam","code":"BN"}
+{ "index" : { "_index" : "countries", "_id" : "FFB82FB1F2C50C8041A41D4D7069F657" } }
+{"name":"Bulgaria","code":"BG"}
+{ "index" : { "_index" : "countries", "_id" : "63AEA2B3F1F2D002DD03FADD74C12BF9" } }
+{"name":"Burkina Faso","code":"BF"}
+{ "index" : { "_index" : "countries", "_id" : "10329494661CAC071625CD7B3A4B0848" } }
+{"name":"Burundi","code":"BI"}
+{ "index" : { "_index" : "countries", "_id" : "A2D10D9A66684E3A7E4AB63D1D1AA147" } }
+{"name":"Cambodia","code":"KH"}
+{ "index" : { "_index" : "countries", "_id" : "F04002678760C8915C1A5595BFBC7DB2" } }
+{"name":"Cameroon","code":"CM"}
+{ "index" : { "_index" : "countries", "_id" : "1E148D0BB8947AE808A4C876BE5BA364" } }
+{"name":"Canada","code":"CA"}
+{ "index" : { "_index" : "countries", "_id" : "95ED22398A3CEC840E1760301DD01E26" } }
+{"name":"Cape Verde","code":"CV"}
+{ "index" : { "_index" : "countries", "_id" : "E9AE85F5B6F759B09A36855942B4D447" } }
+{"name":"Cayman Islands","code":"KY"}
+{ "index" : { "_index" : "countries", "_id" : "D167D66B54CA0E590A6BE0BA4E2EE78B" } }
+{"name":"Central African Republic","code":"CF"}
+{ "index" : { "_index" : "countries", "_id" : "C4B3736DDEE97407B09A2762BE72B9B6" } }
+{"name":"Chad","code":"TD"}
+{ "index" : { "_index" : "countries", "_id" : "A3262DB3D80C494DE90F215FF7CCD429" } }
+{"name":"Chile","code":"CL"}
+{ "index" : { "_index" : "countries", "_id" : "44C92EE914F10F5BC1FCEE42DF834DD2" } }
+{"name":"China","code":"CN"}
+{ "index" : { "_index" : "countries", "_id" : "124B0FCF4B433CEAFED8EEEB7DCF6A32" } }
+{"name":"Christmas Island","code":"CX"}
+{ "index" : { "_index" : "countries", "_id" : "02A949E703B5CA32DA98915EA43CEF6A" } }
+{"name":"Cocos (Keeling) Islands","code":"CC"}
+{ "index" : { "_index" : "countries", "_id" : "C0E6ED49AA0DFA3676625BFC024FC7BE" } }
+{"name":"Colombia","code":"CO"}
+{ "index" : { "_index" : "countries", "_id" : "473E535B4F6A9872F921EC3F11B5625F" } }
+{"name":"Comoros","code":"KM"}
+{ "index" : { "_index" : "countries", "_id" : "4698430A8F9B5E84B862C6544B677C2E" } }
+{"name":"Congo","code":"CG"}
+{ "index" : { "_index" : "countries", "_id" : "31D4943E8DB73AF4B6072517F7A5E4EA" } }
+{"name":"Congo, The Democratic Republic of the","code":"CD"}
+{ "index" : { "_index" : "countries", "_id" : "3775F7CBAD0378E640E343AA8C91C77B" } }
+{"name":"Cook Islands","code":"CK"}
+{ "index" : { "_index" : "countries", "_id" : "F9B30269E67F40B86BEDA4C552DD76FD" } }
+{"name":"Costa Rica","code":"CR"}
+{ "index" : { "_index" : "countries", "_id" : "C3A49ECD84F7A86FB062B2C6384A9DC8" } }
+{"name":"Cote D'Ivoire","code":"CI"}
+{ "index" : { "_index" : "countries", "_id" : "C99D4648283A85C5227683C0D02687A9" } }
+{"name":"Croatia","code":"HR"}
+{ "index" : { "_index" : "countries", "_id" : "77CB8C64679BC3D48563C6CECD1FECEA" } }
+{"name":"Cuba","code":"CU"}
+{ "index" : { "_index" : "countries", "_id" : "93CC965D44C1F197B56ECAFC7B3D312E" } }
+{"name":"Cyprus","code":"CY"}
+{ "index" : { "_index" : "countries", "_id" : "175EA65678B2174D3147A29DF51FE9A7" } }
+{"name":"Czech Republic","code":"CZ"}
+{ "index" : { "_index" : "countries", "_id" : "01C4B5A07C0469ABC2DCB1EE819D9E24" } }
+{"name":"Denmark","code":"DK"}
+{ "index" : { "_index" : "countries", "_id" : "EE7A07E27682B985DCA40A5DCD13351D" } }
+{"name":"Djibouti","code":"DJ"}
+{ "index" : { "_index" : "countries", "_id" : "188A24B992D3BD61A0B1085CC4C63FCD" } }
+{"name":"Dominica","code":"DM"}
+{ "index" : { "_index" : "countries", "_id" : "C60D3074976552120581FA85B58E8801" } }
+{"name":"Dominican Republic","code":"DO"}
+{ "index" : { "_index" : "countries", "_id" : "5D329647A2FF678C952A4F1CB51DFB66" } }
+{"name":"Ecuador","code":"EC"}
+{ "index" : { "_index" : "countries", "_id" : "99903D678E256977169282AA9B57D97C" } }
+{"name":"Egypt","code":"EG"}
+{ "index" : { "_index" : "countries", "_id" : "4377C22D8E20E1F4A7C64F285E6CEC36" } }
+{"name":"El Salvador","code":"SV"}
+{ "index" : { "_index" : "countries", "_id" : "4E76E6999EAC0FE9AC1C91EAE68A78F0" } }
+{"name":"Equatorial Guinea","code":"GQ"}
+{ "index" : { "_index" : "countries", "_id" : "BEF0E948F3BDFDA897DF8A5E14FD3C4D" } }
+{"name":"Eritrea","code":"ER"}
+{ "index" : { "_index" : "countries", "_id" : "9CE8C9494940C3DEF9333BA9B48241BB" } }
+{"name":"Estonia","code":"EE"}
+{ "index" : { "_index" : "countries", "_id" : "9422AE21E49233ACCB282F0CF81A7E9C" } }
+{"name":"Ethiopia","code":"ET"}
+{ "index" : { "_index" : "countries", "_id" : "F7EA08B43A00805490EFA2B22113FC15" } }
+{"name":"Falkland Islands (Malvinas)","code":"FK"}
+{ "index" : { "_index" : "countries", "_id" : "136D2225B3131DD9C7B9EFFCD9A6524A" } }
+{"name":"Faroe Islands","code":"FO"}
+{ "index" : { "_index" : "countries", "_id" : "7BA94C166C6284975604D5AF68A1138C" } }
+{"name":"Fiji","code":"FJ"}
+{ "index" : { "_index" : "countries", "_id" : "577CB207DE7E00FCF2608085D0430051" } }
+{"name":"Finland","code":"FI"}
+{ "index" : { "_index" : "countries", "_id" : "AFD89EDAABC43389D29B64F6BE12F301" } }
+{"name":"France","code":"FR"}
+{ "index" : { "_index" : "countries", "_id" : "E73CE5A82CDAE7AAD8014B56AC79BD49" } }
+{"name":"French Guiana","code":"GF"}
+{ "index" : { "_index" : "countries", "_id" : "CEFF5980716E0A68FCC3181311F1695C" } }
+{"name":"French Polynesia","code":"PF"}
+{ "index" : { "_index" : "countries", "_id" : "3DF415024C0321379B60B5BC5E1DA975" } }
+{"name":"French Southern Territories","code":"TF"}
+{ "index" : { "_index" : "countries", "_id" : "01575EC47796C5F7C837749E091468AC" } }
+{"name":"Gabon","code":"GA"}
+{ "index" : { "_index" : "countries", "_id" : "DF6F750C105AA9DE80890508598B20DC" } }
+{"name":"Gambia","code":"GM"}
+{ "index" : { "_index" : "countries", "_id" : "DBC31044CE1C9D1C06BCCC2CF11AB993" } }
+{"name":"Georgia","code":"GE"}
+{ "index" : { "_index" : "countries", "_id" : "C8195FBA225764CD840782B62CDAEB71" } }
+{"name":"Germany","code":"DE"}
+{ "index" : { "_index" : "countries", "_id" : "F3ABBB5FD975AB946C4981F82D228E59" } }
+{"name":"Ghana","code":"GH"}
+{ "index" : { "_index" : "countries", "_id" : "AE45A2ED2E1A71E51DD154A2F8090556" } }
+{"name":"Gibraltar","code":"GI"}
+{ "index" : { "_index" : "countries", "_id" : "20143823CF9562A350EFD5C89BD7912C" } }
+{"name":"Greece","code":"GR"}
+{ "index" : { "_index" : "countries", "_id" : "2D2CBD95EF5969E8FF177B665E6FCF17" } }
+{"name":"Greenland","code":"GL"}
+{ "index" : { "_index" : "countries", "_id" : "CB9E4B7DE454C7B45F051B7523123766" } }
+{"name":"Grenada","code":"GD"}
+{ "index" : { "_index" : "countries", "_id" : "46808646A3759B626F410A6FBD66593E" } }
+{"name":"Guadeloupe","code":"GP"}
+{ "index" : { "_index" : "countries", "_id" : "195EFF05A057D6A7BE7553F16A889B79" } }
+{"name":"Guam","code":"GU"}
+{ "index" : { "_index" : "countries", "_id" : "E0C51892CC086B93053AD4F9A20B0A4C" } }
+{"name":"Guatemala","code":"GT"}
+{ "index" : { "_index" : "countries", "_id" : "729A413A2409FDA8666ED79461EFE575" } }
+{"name":"Guernsey","code":"GG"}
+{ "index" : { "_index" : "countries", "_id" : "5042BD36A5902E6A27DC18658FB03FA0" } }
+{"name":"Guinea","code":"GN"}
+{ "index" : { "_index" : "countries", "_id" : "AF52B51CA743CFDF65BB1A272F4347C5" } }
+{"name":"Guinea-Bissau","code":"GW"}
+{ "index" : { "_index" : "countries", "_id" : "E76A892F4285312EE9F57E1A726E956E" } }
+{"name":"Guyana","code":"GY"}
+{ "index" : { "_index" : "countries", "_id" : "1341E459B8C56FB25587A8F95CB723BD" } }
+{"name":"Haiti","code":"HT"}
+{ "index" : { "_index" : "countries", "_id" : "20BAAB4BFE6AB309675D42C9470D589B" } }
+{"name":"Heard Island and Mcdonald Islands","code":"HM"}
+{ "index" : { "_index" : "countries", "_id" : "3A51AB9E068A85442927676ECE50B998" } }
+{"name":"Holy See (Vatican City State)","code":"VA"}
+{ "index" : { "_index" : "countries", "_id" : "99E4B6BFFA190567D7EBA26E77F53C34" } }
+{"name":"Honduras","code":"HN"}
+{ "index" : { "_index" : "countries", "_id" : "0CDC1B24A64CC708828EB3D103B71B3C" } }
+{"name":"Hong Kong","code":"HK"}
+{ "index" : { "_index" : "countries", "_id" : "FFD94690A4423173ECFE36D8C91FC112" } }
+{"name":"Hungary","code":"HU"}
+{ "index" : { "_index" : "countries", "_id" : "7060D285659CB0D132232E27FD6635B9" } }
+{"name":"Iceland","code":"IS"}
+{ "index" : { "_index" : "countries", "_id" : "3B24D324191325B920DF2FCDF3AD9E52" } }
+{"name":"India","code":"IN"}
+{ "index" : { "_index" : "countries", "_id" : "6ECF03479076097A14C5961D692BFE5F" } }
+{"name":"Indonesia","code":"ID"}
+{ "index" : { "_index" : "countries", "_id" : "F26B91C7C6DCBB4767975F348F70747D" } }
+{"name":"Iran, Islamic Republic Of","code":"IR"}
+{ "index" : { "_index" : "countries", "_id" : "1678A9DCD998C132F84595D8936B0C70" } }
+{"name":"Iraq","code":"IQ"}
+{ "index" : { "_index" : "countries", "_id" : "6DDE99B345E8B0BB1285D4C038FBB910" } }
+{"name":"Ireland","code":"IE"}
+{ "index" : { "_index" : "countries", "_id" : "A4D260856F5811E433D2B1A020021206" } }
+{"name":"Isle of Man","code":"IM"}
+{ "index" : { "_index" : "countries", "_id" : "06B58F16179DB4E04ADBF8858A4FD440" } }
+{"name":"Israel","code":"IL"}
+{ "index" : { "_index" : "countries", "_id" : "F5B10A5C4F13519812BC44A568DEEE36" } }
+{"name":"Italy","code":"IT"}
+{ "index" : { "_index" : "countries", "_id" : "DA923A52446D13E585D4F6E407C32145" } }
+{"name":"Jamaica","code":"JM"}
+{ "index" : { "_index" : "countries", "_id" : "0A7C275FA6548994C747078F3E203AFF" } }
+{"name":"Japan","code":"JP"}
+{ "index" : { "_index" : "countries", "_id" : "391BF43ED84EC5D10D63A217CB985048" } }
+{"name":"Jersey","code":"JE"}
+{ "index" : { "_index" : "countries", "_id" : "B25A210AAB9D95C4476C9F519BAF5F5D" } }
+{"name":"Jordan","code":"JO"}
+{ "index" : { "_index" : "countries", "_id" : "B9957D025C981EE6E9D11601C32FC5B0" } }
+{"name":"Kazakhstan","code":"KZ"}
+{ "index" : { "_index" : "countries", "_id" : "8F3FB14BC2FD2EEFB5B636C316789EF3" } }
+{"name":"Kenya","code":"KE"}
+{ "index" : { "_index" : "countries", "_id" : "F4FDC065A945564C850A968E471D2F8E" } }
+{"name":"Kiribati","code":"KI"}
+{ "index" : { "_index" : "countries", "_id" : "42ED190B8C6B05130CDC4B44EF3FD723" } }
+{"name":"Korea, Democratic People'S Republic of","code":"KP"}
+{ "index" : { "_index" : "countries", "_id" : "F550B4973F21C3E3C6B33ADF79AED240" } }
+{"name":"Korea, Republic of","code":"KR"}
+{ "index" : { "_index" : "countries", "_id" : "A6D7835BC503EFDA62BDA0847DE1F039" } }
+{"name":"Kuwait","code":"KW"}
+{ "index" : { "_index" : "countries", "_id" : "4256E1D37E7958AB377A6071E725F42D" } }
+{"name":"Kyrgyzstan","code":"KG"}
+{ "index" : { "_index" : "countries", "_id" : "5264BA680DB1863B2E884A18A8D0E1FD" } }
+{"name":"Lao People'S Democratic Republic","code":"LA"}
+{ "index" : { "_index" : "countries", "_id" : "ECAA2ECD6C7665EF97E81243F08469D7" } }
+{"name":"Latvia","code":"LV"}
+{ "index" : { "_index" : "countries", "_id" : "6FBD04DD561FF0C4B713F5B12A6AA8DF" } }
+{"name":"Lebanon","code":"LB"}
+{ "index" : { "_index" : "countries", "_id" : "A8FC40326BA176563F4CBC270CA1D380" } }
+{"name":"Lesotho","code":"LS"}
+{ "index" : { "_index" : "countries", "_id" : "2D1CC1FE2FCF036A24BC6D3EE1CDC1BD" } }
+{"name":"Liberia","code":"LR"}
+{ "index" : { "_index" : "countries", "_id" : "CEA196AA34B19C71739D63CECAC77DC0" } }
+{"name":"Libyan Arab Jamahiriya","code":"LY"}
+{ "index" : { "_index" : "countries", "_id" : "CA184D3A055DD098AFF4B46096C4AB93" } }
+{"name":"Liechtenstein","code":"LI"}
+{ "index" : { "_index" : "countries", "_id" : "80BA70FF120FF7DDA1C22BBBFA3D7063" } }
+{"name":"Lithuania","code":"LT"}
+{ "index" : { "_index" : "countries", "_id" : "E056E0D215CF4B6EE4DB9847E3ADFA1E" } }
+{"name":"Luxembourg","code":"LU"}
+{ "index" : { "_index" : "countries", "_id" : "0A5E0E5D23B38CF2867FB67167A51861" } }
+{"name":"Macao","code":"MO"}
+{ "index" : { "_index" : "countries", "_id" : "E53C11673E35C741249A927D0EBA33A8" } }
+{"name":"Macedonia, The Former Yugoslav Republic of","code":"MK"}
+{ "index" : { "_index" : "countries", "_id" : "D3A3B2B7A481EAE3FAAA890E17D4D1B4" } }
+{"name":"Madagascar","code":"MG"}
+{ "index" : { "_index" : "countries", "_id" : "C697103791D578CE25108A7057F08D23" } }
+{"name":"Malawi","code":"MW"}
+{ "index" : { "_index" : "countries", "_id" : "6EF4341D3BF62C0CC0BBF5828991220E" } }
+{"name":"Malaysia","code":"MY"}
+{ "index" : { "_index" : "countries", "_id" : "9DBEA151C5C7959C219851B5CBC14D9D" } }
+{"name":"Maldives","code":"MV"}
+{ "index" : { "_index" : "countries", "_id" : "901AFC30FDFB9684494446D593A937D2" } }
+{"name":"Mali","code":"ML"}
+{ "index" : { "_index" : "countries", "_id" : "BD4A7101B167C2E220AD4B0491759D1D" } }
+{"name":"Malta","code":"MT"}
+{ "index" : { "_index" : "countries", "_id" : "534007A5CBF032CAA52B3E05FE9BD48E" } }
+{"name":"Marshall Islands","code":"MH"}
+{ "index" : { "_index" : "countries", "_id" : "A136D087E6AC17A0DA92C20D40B7ECE6" } }
+{"name":"Martinique","code":"MQ"}
+{ "index" : { "_index" : "countries", "_id" : "C098A4B1E9588FE8054B07EAD69F5CE4" } }
+{"name":"Mauritania","code":"MR"}
+{ "index" : { "_index" : "countries", "_id" : "E23592E32A6EF8D7DD30C687365B147D" } }
+{"name":"Mauritius","code":"MU"}
+{ "index" : { "_index" : "countries", "_id" : "AD7EDD2194B882382063E335D0D1B488" } }
+{"name":"Mayotte","code":"YT"}
+{ "index" : { "_index" : "countries", "_id" : "2A9DAD2B7A562C8B6E1A9D50881F96E3" } }
+{"name":"Mexico","code":"MX"}
+{ "index" : { "_index" : "countries", "_id" : "181240B3609C77B35322AD50E5E8FC46" } }
+{"name":"Micronesia, Federated States of","code":"FM"}
+{ "index" : { "_index" : "countries", "_id" : "46F032545A6266A9E37A382CD4C446EB" } }
+{"name":"Moldova, Republic of","code":"MD"}
+{ "index" : { "_index" : "countries", "_id" : "39A1C41646E5F5A008A82B292CC197CF" } }
+{"name":"Monaco","code":"MC"}
+{ "index" : { "_index" : "countries", "_id" : "6F223FDE3899825B806AFD636BA6058A" } }
+{"name":"Mongolia","code":"MN"}
+{ "index" : { "_index" : "countries", "_id" : "E604E2B0647EC69F46811D4941AD2554" } }
+{"name":"Montserrat","code":"MS"}
+{ "index" : { "_index" : "countries", "_id" : "AAA74892EF3595E4EFFDB9F114665EE8" } }
+{"name":"Morocco","code":"MA"}
+{ "index" : { "_index" : "countries", "_id" : "4A6A8F2633B71275E1307527AE34C2CD" } }
+{"name":"Mozambique","code":"MZ"}
+{ "index" : { "_index" : "countries", "_id" : "5C1617F913AD6F535CD9C09BCC1B4634" } }
+{"name":"Myanmar","code":"MM"}
+{ "index" : { "_index" : "countries", "_id" : "28E9646F7DBBFFD5B5996D6FDB67BE6A" } }
+{"name":"Namibia","code":"NA"}
+{ "index" : { "_index" : "countries", "_id" : "C0CB200D4B1DC7D55F6AA8F9D94C9DAA" } }
+{"name":"Nauru","code":"NR"}
+{ "index" : { "_index" : "countries", "_id" : "7C47BE090D8A3561E8DFC9C71B6B74A7" } }
+{"name":"Nepal","code":"NP"}
+{ "index" : { "_index" : "countries", "_id" : "FAEA17ED666FF302B8CCBC8B2DFC9373" } }
+{"name":"Netherlands","code":"NL"}
+{ "index" : { "_index" : "countries", "_id" : "D6CB66746D44D5CA3B482625A91AE72D" } }
+{"name":"Netherlands Antilles","code":"AN"}
+{ "index" : { "_index" : "countries", "_id" : "96DBA19B4EA19A2DF3D2C4E6E8ECA7C7" } }
+{"name":"New Caledonia","code":"NC"}
+{ "index" : { "_index" : "countries", "_id" : "9EB16B02FF5DDBCC64B3B848476ACF06" } }
+{"name":"New Zealand","code":"NZ"}
+{ "index" : { "_index" : "countries", "_id" : "BADD9013AFDFB402FB588F161F4D2B7D" } }
+{"name":"Nicaragua","code":"NI"}
+{ "index" : { "_index" : "countries", "_id" : "CD06F56B681BB1E80C30B88EDB994626" } }
+{"name":"Niger","code":"NE"}
+{ "index" : { "_index" : "countries", "_id" : "585F0B16BE9A75B89BEF1D539C648FD1" } }
+{"name":"Nigeria","code":"NG"}
+{ "index" : { "_index" : "countries", "_id" : "26A31C8ADE3BAA7061B0FC3682FE1A25" } }
+{"name":"Niue","code":"NU"}
+{ "index" : { "_index" : "countries", "_id" : "15A80B7EDE0D358D8E6C644C6163394D" } }
+{"name":"Norfolk Island","code":"NF"}
+{ "index" : { "_index" : "countries", "_id" : "33D1CFD479D1BC48111808EA6DC46543" } }
+{"name":"Northern Mariana Islands","code":"MP"}
+{ "index" : { "_index" : "countries", "_id" : "CDD807DF947E40BE373238C0B227A86B" } }
+{"name":"Norway","code":"NO"}
+{ "index" : { "_index" : "countries", "_id" : "3A2A39EBFAA71E22AC315EB83886357D" } }
+{"name":"Oman","code":"OM"}
+{ "index" : { "_index" : "countries", "_id" : "A27196F429AB57175FE87D9BE035E74A" } }
+{"name":"Pakistan","code":"PK"}
+{ "index" : { "_index" : "countries", "_id" : "F15EF48FA28EA307642D93174D48702A" } }
+{"name":"Palau","code":"PW"}
+{ "index" : { "_index" : "countries", "_id" : "97770B7204EE15E3ADF9CF3FD4918FAD" } }
+{"name":"Palestinian Territory, Occupied","code":"PS"}
+{ "index" : { "_index" : "countries", "_id" : "16DEBBA73CA53169D83AF69EED0A7746" } }
+{"name":"Panama","code":"PA"}
+{ "index" : { "_index" : "countries", "_id" : "C376E7D81645C4B854E118D02136C36F" } }
+{"name":"Papua New Guinea","code":"PG"}
+{ "index" : { "_index" : "countries", "_id" : "BA839D389533CC834F2A67BCDAE40159" } }
+{"name":"Paraguay","code":"PY"}
+{ "index" : { "_index" : "countries", "_id" : "1B4365D15079FD0C0AA58E288A93F62E" } }
+{"name":"Peru","code":"PE"}
+{ "index" : { "_index" : "countries", "_id" : "AA4D56AF1F2443E2295D04DE0A620DA6" } }
+{"name":"Philippines","code":"PH"}
+{ "index" : { "_index" : "countries", "_id" : "F7DA926E78D3792DDEDA5326D183F049" } }
+{"name":"Pitcairn","code":"PN"}
+{ "index" : { "_index" : "countries", "_id" : "0AB9FC4A163C393BCEAFBBA5814B41A1" } }
+{"name":"Poland","code":"PL"}
+{ "index" : { "_index" : "countries", "_id" : "3442E3ED678A83090EB62F1D697A0472" } }
+{"name":"Portugal","code":"PT"}
+{ "index" : { "_index" : "countries", "_id" : "84B8607D1205CCCC2EB821A5C81D02C0" } }
+{"name":"Puerto Rico","code":"PR"}
+{ "index" : { "_index" : "countries", "_id" : "373BEB4570C1AC9B799A75C72544D376" } }
+{"name":"Qatar","code":"QA"}
+{ "index" : { "_index" : "countries", "_id" : "F4B386BF1F0773189A04569C6710501B" } }
+{"name":"Reunion","code":"RE"}
+{ "index" : { "_index" : "countries", "_id" : "3B6C7F2681DEBD76B99C3BDA2218A7D4" } }
+{"name":"Romania","code":"RO"}
+{ "index" : { "_index" : "countries", "_id" : "4927196D9C74DF768089CB0817AADB06" } }
+{"name":"Russian Federation","code":"RU"}
+{ "index" : { "_index" : "countries", "_id" : "5349F87B7D44F6CF9A2B5FF422D90E73" } }
+{"name":"RWANDA","code":"RW"}
+{ "index" : { "_index" : "countries", "_id" : "8992D6D962B904318903574B1145A085" } }
+{"name":"Saint Helena","code":"SH"}
+{ "index" : { "_index" : "countries", "_id" : "E5B788E2299DADFFFCF42A8601CC84A8" } }
+{"name":"Saint Kitts and Nevis","code":"KN"}
+{ "index" : { "_index" : "countries", "_id" : "7A9A02D8FF0342C71EEA4BE8E6AE78D8" } }
+{"name":"Saint Lucia","code":"LC"}
+{ "index" : { "_index" : "countries", "_id" : "4B78FBE72ECC3C8BF2BD66D08AB9C249" } }
+{"name":"Saint Pierre and Miquelon","code":"PM"}
+{ "index" : { "_index" : "countries", "_id" : "F39C818ECE584A1B7CE60A6A63B984DF" } }
+{"name":"Saint Vincent and the Grenadines","code":"VC"}
+{ "index" : { "_index" : "countries", "_id" : "FE52306F69793D074621AE1D44074452" } }
+{"name":"Samoa","code":"WS"}
+{ "index" : { "_index" : "countries", "_id" : "D2013DF12D79E575551E8C03FE200808" } }
+{"name":"San Marino","code":"SM"}
+{ "index" : { "_index" : "countries", "_id" : "6BB2B8623341C6B77F723D33FFDE5F9F" } }
+{"name":"Sao Tome and Principe","code":"ST"}
+{ "index" : { "_index" : "countries", "_id" : "BF27FBDC92F38F6431B5FADA753C2EA9" } }
+{"name":"Saudi Arabia","code":"SA"}
+{ "index" : { "_index" : "countries", "_id" : "3543D2AA329BC838184A667C2279D3DD" } }
+{"name":"Senegal","code":"SN"}
+{ "index" : { "_index" : "countries", "_id" : "39B29BE3D91B12E8949691F42F881AFD" } }
+{"name":"Serbia and Montenegro","code":"CS"}
+{ "index" : { "_index" : "countries", "_id" : "1A65CBDD0120F5D5908FDF1B39F14EBD" } }
+{"name":"Seychelles","code":"SC"}
+{ "index" : { "_index" : "countries", "_id" : "0E21F40D82155EAAF48D5117A126C989" } }
+{"name":"Sierra Leone","code":"SL"}
+{ "index" : { "_index" : "countries", "_id" : "89E43B83DE6BC7073B053DD4E1EA828C" } }
+{"name":"Singapore","code":"SG"}
+{ "index" : { "_index" : "countries", "_id" : "71315AD31F978B5259F05BDAB4E07794" } }
+{"name":"Slovakia","code":"SK"}
+{ "index" : { "_index" : "countries", "_id" : "B3D9E53CC5232C54687C86084E532F33" } }
+{"name":"Slovenia","code":"SI"}
+{ "index" : { "_index" : "countries", "_id" : "BBED476F9592C3E6AFFA5C49877E5B2B" } }
+{"name":"Solomon Islands","code":"SB"}
+{ "index" : { "_index" : "countries", "_id" : "A03831857C42E772EF84658B58190CF5" } }
+{"name":"Somalia","code":"SO"}
+{ "index" : { "_index" : "countries", "_id" : "7CE10D187444E403D5061A550C2DEA0E" } }
+{"name":"South Africa","code":"ZA"}
+{ "index" : { "_index" : "countries", "_id" : "00CED4AD7B0B73CAD7482C9594E526EB" } }
+{"name":"South Georgia and the South Sandwich Islands","code":"GS"}
+{ "index" : { "_index" : "countries", "_id" : "493B0BBD827E9422E337C6AF8D30B41A" } }
+{"name":"Spain","code":"ES"}
+{ "index" : { "_index" : "countries", "_id" : "499A109BB759D7F41162B15C3637FF11" } }
+{"name":"Sri Lanka","code":"LK"}
+{ "index" : { "_index" : "countries", "_id" : "C0E4FF7040B6ADEED7FB74DE81F996BA" } }
+{"name":"Sudan","code":"SD"}
+{ "index" : { "_index" : "countries", "_id" : "EA55CDBC0E597A1F5A8909719ED9EF1B" } }
+{"name":"Suriname","code":"SR"}
+{ "index" : { "_index" : "countries", "_id" : "543A724E07570AC5F66F3B35CB9603B9" } }
+{"name":"Svalbard and Jan Mayen","code":"SJ"}
+{ "index" : { "_index" : "countries", "_id" : "41DAEAE1B247CB8102B77D962E54CDDE" } }
+{"name":"Swaziland","code":"SZ"}
+{ "index" : { "_index" : "countries", "_id" : "180DF0EE1BA5536CFD6D443063BCDE93" } }
+{"name":"Sweden","code":"SE"}
+{ "index" : { "_index" : "countries", "_id" : "AB5E925C92A4DE60B491A0E7E7771694" } }
+{"name":"Switzerland","code":"CH"}
+{ "index" : { "_index" : "countries", "_id" : "64D63D1D8A4ACCBFDAC2BF56ED5194E7" } }
+{"name":"Syrian Arab Republic","code":"SY"}
+{ "index" : { "_index" : "countries", "_id" : "C1B53A1CAE83DC102C903279D852FB21" } }
+{"name":"Taiwan, Province of China","code":"TW"}
+{ "index" : { "_index" : "countries", "_id" : "DBBC11BFEBA92FB8611849EC8B3DF35D" } }
+{"name":"Tajikistan","code":"TJ"}
+{ "index" : { "_index" : "countries", "_id" : "C3BE331B5048ECCFF5B090155FA295E3" } }
+{"name":"Tanzania, United Republic of","code":"TZ"}
+{ "index" : { "_index" : "countries", "_id" : "F4068937C36B07F343403D5CDC104A62" } }
+{"name":"Thailand","code":"TH"}
+{ "index" : { "_index" : "countries", "_id" : "CC8B35E7A4A8A502AF6DEB7E95410B11" } }
+{"name":"Timor-Leste","code":"TL"}
+{ "index" : { "_index" : "countries", "_id" : "C37AD8B6A39088390A866464971D3F80" } }
+{"name":"Togo","code":"TG"}
+{ "index" : { "_index" : "countries", "_id" : "691504E02A8CDEB71C8583B7F8FCBBF5" } }
+{"name":"Tokelau","code":"TK"}
+{ "index" : { "_index" : "countries", "_id" : "3238D8CD3A3BD23119C4A2B547BB8832" } }
+{"name":"Tonga","code":"TO"}
+{ "index" : { "_index" : "countries", "_id" : "A876B6130A34CB694F581460FF42BA67" } }
+{"name":"Trinidad and Tobago","code":"TT"}
+{ "index" : { "_index" : "countries", "_id" : "D9923138F3B347E13340E12B8702C8B3" } }
+{"name":"Tunisia","code":"TN"}
+{ "index" : { "_index" : "countries", "_id" : "EDE7DFF2AF3547AB296240C3894C6E84" } }
+{"name":"Turkey","code":"TR"}
+{ "index" : { "_index" : "countries", "_id" : "E2A7370F0F40C80FD670536A8002DBDE" } }
+{"name":"Turkmenistan","code":"TM"}
+{ "index" : { "_index" : "countries", "_id" : "D865DF32C89C8A6313370C9ACF00FB71" } }
+{"name":"Turks and Caicos Islands","code":"TC"}
+{ "index" : { "_index" : "countries", "_id" : "6125882419D85D51927F552D248AC98B" } }
+{"name":"Tuvalu","code":"TV"}
+{ "index" : { "_index" : "countries", "_id" : "58EBD4CFDD87B44746CD6D1B39C7AF48" } }
+{"name":"Uganda","code":"UG"}
+{ "index" : { "_index" : "countries", "_id" : "111F3C3D9D529E217BBB8552CF8DBB0C" } }
+{"name":"Ukraine","code":"UA"}
+{ "index" : { "_index" : "countries", "_id" : "2649A9DE331E398036759C107479D970" } }
+{"name":"United Arab Emirates","code":"AE"}
+{ "index" : { "_index" : "countries", "_id" : "32DB5F37FA3B0D7F1A11296482F75B31" } }
+{"name":"United Kingdom","code":"GB"}
+{ "index" : { "_index" : "countries", "_id" : "9EFAA1A9DC6116A3F4555BFF0456694C" } }
+{"name":"United States","code":"US"}
+{ "index" : { "_index" : "countries", "_id" : "8BD3914E1A0D0C3F2BD8AB08DBF39286" } }
+{"name":"United States Minor Outlying Islands","code":"UM"}
+{ "index" : { "_index" : "countries", "_id" : "530EDB1CE86703D9274D7FD179F11845" } }
+{"name":"Uruguay","code":"UY"}
+{ "index" : { "_index" : "countries", "_id" : "C6F60651B0F20C539E5C7D40593E2461" } }
+{"name":"Uzbekistan","code":"UZ"}
+{ "index" : { "_index" : "countries", "_id" : "7C9E21B6BE8B3965F4F1C23721681D9E" } }
+{"name":"Vanuatu","code":"VU"}
+{ "index" : { "_index" : "countries", "_id" : "2DEF346DA90140FAFEA68466F906A889" } }
+{"name":"Venezuela","code":"VE"}
+{ "index" : { "_index" : "countries", "_id" : "AA29BD990FFD7F0BB96855A19C04C358" } }
+{"name":"Viet Nam","code":"VN"}
+{ "index" : { "_index" : "countries", "_id" : "FA17C4CCA73E9248E0FE74BD957D47AB" } }
+{"name":"Virgin Islands, British","code":"VG"}
+{ "index" : { "_index" : "countries", "_id" : "B44B420DA16687E057F78FD7E33FFBC2" } }
+{"name":"Virgin Islands, U.S.","code":"VI"}
+{ "index" : { "_index" : "countries", "_id" : "B220BA63C093E822DCC3EC9547CB7F9E" } }
+{"name":"Wallis and Futuna","code":"WF"}
+{ "index" : { "_index" : "countries", "_id" : "AA1FC71A0633175562091FC2F0344935" } }
+{"name":"Western Sahara","code":"EH"}
+{ "index" : { "_index" : "countries", "_id" : "B3531133923413EB1D67965AB7905F8F" } }
+{"name":"Yemen","code":"YE"}
+{ "index" : { "_index" : "countries", "_id" : "228C352AB0B104D6A115F251397C0D74" } }
+{"name":"Zambia","code":"ZM"}
+{ "index" : { "_index" : "countries", "_id" : "6BE8B5246317251308EBD523D4327253" } }
+{"name":"Zimbabwe","code":"ZW"}
