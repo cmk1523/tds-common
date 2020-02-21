@@ -23,12 +23,6 @@ public class Auditable implements Serializable, Comparable<Auditable> {
     private String createdStr;
 
     @NotNull
-    private String hash;
-
-    @NotNull
-    private String formerHash;
-
-    @NotNull
     private List<@NotBlank String> tags = new ArrayList<>();
 
     @Override
@@ -81,24 +75,6 @@ public class Auditable implements Serializable, Comparable<Auditable> {
         return this;
     }
 
-    public String getFormerHash() {
-        return formerHash;
-    }
-
-    public Auditable setFormerHash(String formerHash) {
-        this.formerHash = formerHash;
-        return this;
-    }
-
-    public String getHash() {
-        return hash;
-    }
-
-    public Auditable setHash(String hash) {
-        this.hash = hash;
-        return this;
-    }
-
     @Override
     public String toString() {
         return "Auditable{" +
@@ -106,7 +82,6 @@ public class Auditable implements Serializable, Comparable<Auditable> {
                 ", name='" + name + '\'' +
                 ", created=" + created +
                 ", createdStr='" + createdStr + '\'' +
-                ", formerHash='" + formerHash + '\'' +
                 ", tags=" + tags +
                 '}';
     }
@@ -120,13 +95,12 @@ public class Auditable implements Serializable, Comparable<Auditable> {
                 Objects.equals(name, auditable.name) &&
                 Objects.equals(created, auditable.created) &&
                 Objects.equals(createdStr, auditable.createdStr) &&
-                Objects.equals(formerHash, auditable.formerHash) &&
                 Objects.equals(tags, auditable.tags);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, created, createdStr, hash, formerHash, tags);
+        return Objects.hash(id, name, created, createdStr, tags);
     }
 }

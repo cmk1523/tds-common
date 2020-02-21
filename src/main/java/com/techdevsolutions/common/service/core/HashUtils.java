@@ -1,8 +1,8 @@
 package com.techdevsolutions.common.service.core;
 
+import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.xml.bind.DatatypeConverter;
 import java.io.File;
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -46,11 +46,19 @@ public class HashUtils {
         return HashUtils.bytesToHexString(md.digest());
     }
 
+    public static String bytesToHexString(String string) {
+        if (string == null) {
+            throw new IllegalArgumentException("string is null");
+        }
+
+        return HashUtils.bytesToHexString(string.getBytes());
+    }
+
     public static String bytesToHexString(byte[] bytes) {
         if (bytes == null) {
             throw new IllegalArgumentException("bytes is null");
         }
 
-        return DatatypeConverter.printHexBinary(bytes).toUpperCase();
+        return new String(Hex.encodeHex(bytes)).toUpperCase();
     }
 }

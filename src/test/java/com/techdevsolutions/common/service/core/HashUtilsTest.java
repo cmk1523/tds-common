@@ -30,5 +30,8 @@ public class HashUtilsTest {
 
     @org.junit.Test
     public void bytesToHexString() {
+        String i = "hello";
+        String hex = HashUtils.bytesToHexString(i);
+        System.out.println(hex);
     }
 }
