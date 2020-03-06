@@ -9,17 +9,6 @@ import java.nio.file.Files;
 import java.util.*;
 
 public class FileUtils {
-    public static Date getYesterdaysDate(TimeZone timeZone) {
-        return FileUtils.getYesterdaysDate(new Date(), timeZone);
-    }
-
-    public static Date getYesterdaysDate(Date date, TimeZone timeZone) {
-        Calendar cal = Calendar.getInstance();
-        cal.setTimeZone(timeZone);
-        cal.setTime(date);
-        cal.add(Calendar.DATE, -1);
-        return cal.getTime();
-    }
 
     public static Boolean doesFileOrDirectoryExist(String fullPath) {
         File f = new File(fullPath);
