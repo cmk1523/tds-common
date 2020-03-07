@@ -17,5 +17,5 @@ public interface DaoCrudInterface<T> {
 
     Boolean verifyRemoval(final String id) throws Exception;
 
-    void setupIndex() throws Exception;
+    void install() throws Exception;
 }
