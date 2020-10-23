@@ -258,7 +258,7 @@ public class BaseElasticsearchHighLevel {
     }
 
     public String createDocument(String objectAsString, String index) throws Exception {
-        IndexRequest request = new IndexRequest(index);
+        IndexRequest request = new IndexRequest(index, "_doc");
         request.source(objectAsString, XContentType.JSON);
         IndexResponse response = this.getClient().index(request, RequestOptions.DEFAULT);
 

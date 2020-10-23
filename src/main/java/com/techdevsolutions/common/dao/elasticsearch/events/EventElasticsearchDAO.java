@@ -8,13 +8,17 @@ import com.techdevsolutions.common.dao.elasticsearch.BaseElasticsearchHighLevel;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.PredicateUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.ElasticsearchStatusException;
+import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.*;
+import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchModule;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -58,6 +62,7 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
         return index;
     }
 
+
     public EventElasticsearchDAO setIndex(String index) {
         this.index = index;
         return this;
@@ -71,6 +76,38 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
         return objectMapper.writeValueAsString(itemAsMap);
     }
 
+    public List<Event> search(String query) throws Exception {
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        SearchModule searchModule = new SearchModule(Settings.EMPTY, false, Collections.emptyList());
+
+        try {
+            NamedXContentRegistry namedXContentRegistry = new NamedXContentRegistry(searchModule.getNamedXContents());
+            XContent xContent = XContentFactory.xContent(XContentType.JSON);
+            XContentParser parser = xContent.createParser(namedXContentRegistry,
+                    DeprecationHandler.THROW_UNSUPPORTED_OPERATION, query);
+            searchSourceBuilder.parseXContent(parser);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        SearchRequest searchRequest = new SearchRequest(this.getIndex());
+        searchRequest.source(searchSourceBuilder);
+        searchRequest.scroll(TimeValue.timeValueMinutes(1L));
+
+        List<SearchHit> results = this.getDocumentsWithScroll(searchRequest);
+        return results.stream().map((i) -> {
+            try {
+                Event event = this.rowMapper.fromJson(i.getSourceAsString());
+                event.setId(i.getId());
+                return event;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }).filter(Objects::nonNull).collect(Collectors.toList());
+    }
+
     public Event get(String id) throws Exception {
         GetResponse getResponse = this.getDocument(id, this.getIndex());
         Event event = this.rowMapper.fromJson(getResponse.getSourceAsString());
@@ -81,6 +118,10 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
     public String create(final Event event) throws Exception {
         String itemAsJson = EventElasticsearchDAO.EventToJson(event);
         return this.createDocument(itemAsJson, this.getIndex());
+    }
+
+    public String createFromJson(final String eventAsJson) throws Exception {
+        return this.createDocument(eventAsJson, this.getIndex());
     }
 
     public void createBulk(List<Event> events) {
