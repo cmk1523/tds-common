@@ -2,6 +2,7 @@ package com.techdevsolutions.common.service.generic;
 
 import com.techdevsolutions.common.beans.Search;
 import com.techdevsolutions.common.dao.DaoCrudInterface;
+import com.techdevsolutions.common.dao.memory.InMemoryGenericDaoImpl;
 import com.techdevsolutions.common.service.core.Timer;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -16,21 +17,21 @@ import java.util.Set;
 
 public class GenericServiceImpl implements GenericService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    private DaoCrudInterface<Map<String, Object>> dao;
+    protected DaoCrudInterface<Map> dao;
     private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 
-    public GenericServiceImpl(DaoCrudInterface<Map<String, Object>> dao) {
+    public GenericServiceImpl(InMemoryGenericDaoImpl dao) {
         this.dao = dao;
     }
 
     @Override
     public List<Map> search(Search search) throws Exception {
-        throw new Exception("Method not implemented");
+        return this.dao.search(search);
     }
 
     @Override
-    public List<Map> getAll() throws Exception {
-        throw new Exception("Method not implemented");
+    public List<Map> getAll(Search search) throws Exception {
+        return this.dao.search(search);
     }
 
     @Override
