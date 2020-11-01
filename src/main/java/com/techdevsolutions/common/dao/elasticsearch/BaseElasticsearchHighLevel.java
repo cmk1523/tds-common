@@ -46,10 +46,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BaseElasticsearchHighLevel {
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     protected RestHighLevelClient client = null;
     protected BulkProcessor bulkProcessor = null;
-    public static long BULK_PROCESSOR_INTERVAL = 1;
+    public static final long BULK_PROCESSOR_INTERVAL = 1;
     private String host = "localhost";
 
     public BaseElasticsearchHighLevel() {

@@ -46,7 +46,7 @@ public class EventElasticsearchDAO extends BaseElasticsearchHighLevel {
     public static final String CODE_UPDATED = "200";
     public static final String KIND_UPDATED = "update";
 
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     public final EventRowMapper rowMapper = new EventRowMapper();
     private String index = "events";
 

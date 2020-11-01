@@ -1,6 +1,5 @@
 package com.techdevsolutions.common.dao;
 
-import com.techdevsolutions.common.beans.Filter;
 import com.techdevsolutions.common.beans.Search;
 
 import java.util.List;
