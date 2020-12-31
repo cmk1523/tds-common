@@ -4,13 +4,13 @@ import com.techdevsolutions.common.beans.Search;
 import com.techdevsolutions.common.dao.DaoCrudInterface;
 import com.techdevsolutions.common.dao.memory.InMemoryGenericDaoImpl;
 import com.techdevsolutions.common.service.core.Timer;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -19,6 +19,9 @@ public class GenericServiceImpl implements GenericService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     protected DaoCrudInterface<Map> dao;
     private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+
+    public GenericServiceImpl() {
+    }
 
     public GenericServiceImpl(InMemoryGenericDaoImpl dao) {
         this.dao = dao;

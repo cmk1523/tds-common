@@ -12,7 +12,7 @@ import java.util.*;
 public class InMemoryGenericDaoImpl implements DaoCrudInterface<Map> {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    Map<String, Map> data = new HashMap<>();
+    protected Map<String, Map> data = new HashMap<>();
 
     @Override
     public List<Map> search(Search search) throws Exception {
