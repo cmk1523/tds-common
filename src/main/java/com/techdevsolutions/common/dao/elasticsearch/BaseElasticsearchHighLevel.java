@@ -18,6 +18,7 @@ import org.elasticsearch.action.search.ClearScrollRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchScrollRequest;
+import org.elasticsearch.action.support.master.AcknowledgedResponse;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.Client;
@@ -25,6 +26,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
+import org.elasticsearch.client.indices.PutMappingRequest;
 import org.elasticsearch.common.unit.ByteSizeUnit;
 import org.elasticsearch.common.unit.ByteSizeValue;
 import org.elasticsearch.common.unit.TimeValue;
@@ -177,6 +179,14 @@ public class BaseElasticsearchHighLevel {
     public void deleteByQuery(DeleteByQueryRequest request) throws IOException {
         this.getClient().deleteByQuery(request, RequestOptions.DEFAULT);
     }
+
+
+    public AcknowledgedResponse createMapping(String index, String mapping) throws IOException {
+        PutMappingRequest request = new PutMappingRequest(index);
+        request.source(mapping, XContentType.JSON);
+        return this.getClient().indices().putMapping(request, RequestOptions.DEFAULT);
+    }
+
 
 
     public GetResponse getDocument(String id, String index) throws Exception {

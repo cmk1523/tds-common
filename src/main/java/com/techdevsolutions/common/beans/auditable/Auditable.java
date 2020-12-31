@@ -1,9 +1,9 @@
 package com.techdevsolutions.common.beans.auditable;
 
 import com.techdevsolutions.common.service.core.DateUtils;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;

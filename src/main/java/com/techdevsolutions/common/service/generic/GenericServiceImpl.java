@@ -4,13 +4,13 @@ import com.techdevsolutions.common.beans.Search;
 import com.techdevsolutions.common.dao.DaoCrudInterface;
 import com.techdevsolutions.common.dao.memory.InMemoryGenericDaoImpl;
 import com.techdevsolutions.common.service.core.Timer;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.Validation;
-import jakarta.validation.Validator;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -121,6 +121,6 @@ public class GenericServiceImpl implements GenericService {
 
     @Override
     public void install() throws Exception {
-        throw new Exception("Method not implemented");
+        this.dao.install();
     }
 }
